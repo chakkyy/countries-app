@@ -1,0 +1,103 @@
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 5px 2px 11px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: 0.2s ease-in;
+  margin: 1em;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 5px 6px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    & > * {
+      padding: 0.9rem 1rem;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+
+      span {
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      small {
+        font-size: 12px;
+      }
+    }
+
+    .fab-btn {
+      width: 30px;
+      height: 30px;
+      background: #fff;
+      border-radius: 50%;
+      margin-right: 1.3rem;
+    }
+  }
+}
+
+.box1 {
+  .caption {
+    background: #e4e4e4;
+  }
+}
+.box2 .caption {
+  // background: rgba(0,0,0,1);
+  color: #fff;
+
+  ::before {
+    content: "";
+    background: -ms-linear-gradient(
+      top,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 80%
+    );
+  }
+}
+
+@keyframes borderAnim {
+  0% {
+    border-color: #a85632 !important;
+  }
+  10% {
+    border-color: #a85632 !important;
+  }
+  20% {
+    border-color: #fc5105 !important;
+  }
+  30% {
+    border-color: #82f75c !important;
+  }
+  40% {
+    border-color: #5ac6cc !important;
+  }
+  50% {
+    border-color: #366eb3 !important;
+  }
+  70% {
+    border-color: #4b2566 !important;
+  }
+}

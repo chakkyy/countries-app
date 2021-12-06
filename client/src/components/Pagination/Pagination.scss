@@ -1,0 +1,34 @@
+.numBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 5vh;
+  background-position: bottom;
+  background: #57a1f7;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+  padding: 0 3vw;
+}
+
+.numContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: fit-content;
+  align-items: center;
+}
+
+.number {
+  border: none;
+  background: rgb(209, 226, 243);
+  border-radius: 999px;
+  color: #57a1f7;
+  font-weight: 700;
+  font-size: large;
+  margin: 0.9em;
+}
+
+.number:hover {
+  cursor: pointer;
+}
